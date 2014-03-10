@@ -22,34 +22,26 @@
 	<script src="jquery.js"></script>
 	<script src="jquery.mobile-1.4.2.min.map"></script>
 	<script src="jquery.mobile-1.4.2.min.js"></script>
+        
 </head>
 
 <body>
 
 <!-- /*************************Home****************** -->
  <div data-role="page" id="home" data-theme="a" >
-
+<div data-role="panel" id="menu">
+    <ol data-role="listview" data-filter="true" data-filter-placeholder="Find songs..." data-filter-theme="a" data-inset="true">
+    <li><a href="#abba_father">Abba Father</a></li>
+    <li><a href="#above_all_powers">Above all powers</a></li>
+</ol>
+</div><!-- /panel -->
 	<div data-role="content" data-theme="d" data-position="fixed"></br><h1 align="center">SING HALLELUIA</h1>
-<p align="center"><img src="music.jpg" align="middle" height="50%" width="60%"></p>
-<a href="#list" class="ui-btn ui-corner-all ui-shadow ui-btn-a">List all Songs</a>
+<p align="center"><img src="music.jpg" align="middle" height="50%" width="50%"></p>
+<a href="#menu" class="ui-btn ui-corner-all ui-shadow ui-btn-a">Song List</a>
 </div>
 	<div data-role="footer" data-position="fixed" data-theme="c"><h1>A Jesus Youth Initiative</div>
 </div>
 <!-- /**********************End of Home************** -->
-
-<!-- /**********************List******************** -->
-<div data-role="page" id="list" data-theme="a" >
-
-<div data-role="header" data-position="fixed" data-theme="c" ><h1>Sing Halleluia</h1></div>
-
-<div data-role="content" data-theme="d" data-position="fixed">
-<ol data-role="listview" data-filter="true" data-filter-placeholder="Find songs..." data-filter-theme="a" data-inset="true">
-    <li><a href="#abba_father">Abba Father</a></li>
-    <li><a href="#above_all_powers">Above all powers</a></li>
-</ol></div>
-
-	<div data-role="footer" data-position="fixed" data-theme="c"><h1>A Jesus Youth Initiative</div></div>
-<!-- /*******************End of List***************** -->
 
 <!-- /*******************Abba Father***************** -->
 <div data-role="page" id="abba_father" data-theme="a" >
@@ -59,7 +51,7 @@
     <li><a href="#above_all_powers">Above all powers</a></li>
 </ol>
 </div><!-- /panel -->
-<div data-role="header" data-position="fixed" data-theme="c"><a href="#menu" data-role="button" data-prefetch>menu</a><h1>Sing Halleluia</h1></div>
+<div data-role="header" data-position="fixed" data-theme="c"><a href="#menu" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-bars">Song List</a><h1>Sing Halleluia</h1></div>
 
   <div data-role="content">
 <h1 align="center">Abba Father</h1>
@@ -80,10 +72,22 @@
 
 <!-- /**************End of Abba Father*************** -->
 
-<!-- /*******************Abba Father***************** -->
+<!-- /*******************Above all powers***************** -->
 <div data-role="page" id="above_all_powers" data-theme="a" >
+<div data-role="panel" id="list">
+    <ol data-role="listview" data-filter="true" data-filter-placeholder="Find songs..." data-filter-theme="a" data-inset="true">
+    <li><a href="#abba_father">Abba Father</a></li>
+    <li><a href="#above_all_powers">Above all powers</a></li>
+</ol>
+</div><!-- /panel1 -->
+<div data-role="panel" id="menu" data-position="right">
+  
 
-<div data-role="header" data-position="fixed" data-theme="c"><h1>Sing Halleluia</h1></div>
+    <a href="http://jesusyouth.org" class="ui-btn">Jesus Youth</a>
+    
+
+</div><!-- /panel2 -->
+<div data-role="header" data-position="fixed" data-theme="c"><a href="#list" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-bars">Song List</a><h1>Sing Halleluia</h1><a href="#menu" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-gear">Menu</a></div>
 
   <div data-role="content">
 <h1 align="center">Above all powers</h1>
